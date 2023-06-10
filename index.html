@@ -41,8 +41,55 @@ encourage further activation of research in this area.  </p>
 <h2>Invited Speakers</h2>
 
 <p><a href="https://www.cs.bham.ac.uk/~drg/">Dan Ghica</a>, Huawei Research and Birmingham University, UK</p>
+  
+  <dl>
+    <dt><b>Title</b></dt>
+    <dd><p>Syntactic trinitarianism: terms, graphs, diagrams</p></dd>
+    <dt><b>Abstract</b></dt>
+    <dd><p>The concept of 'syntax' is commonly understood as the structure hidden in linear sequences of tokens,
+      which in language and logic we commonly call 'terms'. However, for the purpose of analysis and
+      transformation, compilers use more efficient data structures to represent syntax, namely graphs.
+      The gap between the linear (term) and graph syntax is elegantly bridged by a third formalism, namely
+      that of string diagrams, a planar representation of terms in the categorical representation of syntax.
+      In this tutorial talk I will show how the interplay of terms, graphs, and diagrams can help specify
+      and implement complex analyses and transformations in compilers for higher-order programming languages,
+      such as type inference, automatic differentiation, or closure conversion.
+      This methodology is at the foundation of a new industrial-strength compiler being implemented currently
+      at Huawei.</p>
+
+      <p>Most of the material I will discuss is based on the recent tututorial paper
+        "<a href="https://arxiv.org/abs/2305.18945">Hierarchical string diagrams and applications</a>" jointly with Fabio Zanasi.</p>
+    </dd>
+  </ul>
 
 <p><a href="http://cl-informatik.uibk.ac.at/users/ami/">Aart Middeldorp</a>, University of Innsbruck, Austria</p>
+
+<h2>Accepted talks</h2>
+
+<ul>
+  <li><b>Rick Erkens</b>: <i>Optimizing Term Rewriting with Creeper Trace Transducers</i>
+    <p>In the context of functional programming/term normalization algorithms we discuss the
+      optimization problem of constructing the result of a sequence of rewrite steps, without
+      computing all the intermediate terms. From a rewrite system we construct a so-called
+      creeper trace transducer, which reads a creeper trace while producing the desired answer.
+      The transducer skips overlap between each pair of subsequent rules, and in some cases a
+      part of the trace can be disregarded altogether.</p>
+  </li>
+  <li><b>Naoki Nishida, Misaki Kojima and Ayuka Matsumi</b>: <i>A Nesting-Preserving Transformation of SIMP Programs into Logically Constrained Term Rewrite Systems</i>
+    <p>In the last decade, several transformations of an imperative program into a logically constrained term rewrite system (LCTRS, for short) have been investigated and extended. They do not preserve the nesting of statements, generating rewrite rules like transition systems, while function calls are represented by the nesting of function symbols. Structural features of the original program must be often useful in analyzing the transformed LCTRS, but, to use such features, we have to know how to transform the program into the LCTRS, e.g., we keep the correspondence between statements in the program and the introduced auxiliary function symbols in the LCTRS. In this paper, we propose a nesting-preserving transformation of a SIMP program (a C integer program) into an LCTRS. The transformation is almost based on previous work and introduces the nesting of function symbols that correspond to statements in the original program. To be more precise, we propose a construction of a tree homomorphism which is used as a post-process of the transformation in previous work, i.e., which is applied to the LCTRS obtained from the program. As a correctness of the nesting-preserving transformation, we show that the tree homomorphism is sound and complete for the reduction of the LCTRS.</p>
+  </li>
+  <li><b>Kasper Hagens and Cynthia Kop</b>: <i>Matrix invariants for program equivalence in LCTRSs</i>
+    <p>When transforming a program into a more efficient version (for example by translating recursive functions into iterative ones), it is important that the input-output-behavior remains the same. One approach to assure this uses Logically Constrained Term Rewriting Systems (LCTRSs). Two versions of a program are translated into LCTRSs and compared in a proof system (Rewriting Induction). Proving their equivalence in this system often requires the introduction of a lemma. In this paper we present a new technique for generating invariants, using matrix calculations, and show how it can be combined with an existing method by Fuhs, Kop and Nishida to produce a lemma.</p>
+  </li>
+  <li><b>Andrei Nacu</b>: <i>SpyType - Type Based Abstract Semantics for Python</i>
+    <p>Python is a high level programming language that is strongly, but dynamically typed. In this paper we
+propose a type inference framework to compute types for the variables within a Python program by using
+static code analysis.</p>
+  </li>
+  <li><b>Misaki Kojima and Naoki Nishida</b>: <i>On Representations of Waiting Queues for Semaphores in Logically Constrained Term Rewrite Systems</i>
+    <p>A transformation of concurrent programs with semaphore-based exclusive control and waiting queues into logically constrained term rewrite systems (LCTRSs, for short) has been proposed. To represent waiting queues, the transformation adopts a turn waiting system with number tickets, while the use of usual lists is a straightforward approach. In this abstract, we show a list-based approach to waiting queues and compare the two approaches by means of verification of race freedom of a simple reader-writer example.</p>
+  </li>
+</ul>
 
 <h2>Previous WPTEs</h2>
 

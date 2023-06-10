@@ -57,3 +57,6 @@ li {
     #border: 1px solid #DADBDC;
 }
 
+dt { float: left; width: 8em; }
+dd { margin-left: 8em; }
+
